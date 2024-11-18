@@ -51,6 +51,13 @@
                         misma especificidad, la última declaración encontrada en CSS se aplica
                         al elemento.
                     </p>
+                    <br>
+                    <h2>Selector Universal</h2>
+                    <p>
+                        El <b>Selector Universal</b> y los valores heredados tienen una especificidad
+                        de 0-*, el cuerpo* y similares tienen una especificidad cero. Los valores
+                        heredados también tienen una especificidad de 0.
+                    </p>
                 </div>
             </div>
 
@@ -63,15 +70,38 @@
                     </p>
                     <br>
                     <ol>
-                        <ol>
+                        <li>
                             Estilo <b>Inline</b>: o también llamados estilos <i>en línea</i>
-                            que se adjunta d irectamente al elemento que se va a diseñar. Ejemplo "h1 style ="color:#ffffff," </ol>
-                        </ol>
-                        <ol>
-                            Clases, atributos y pseudo-clases: que incluyen clases, [atributos]
+                            que se adjunta d irectamente al elemento que se va a diseñar. Ejemplo "h1 style ="color:#ffffff,"</li>
+                        </li>
+                        <li><b>ID's: </b></li>
+                        <li>
+                            <b>Clases, atributos y pseudo-clases:</b> que incluyen clases, [atributos]
                             y pseudoclases como: hover, focus, etc.
-                        </ol>
-                        
+                        </li>
+                        <li>
+                            <b>Elementos y pseudo-elementos:</b> esta categorías incluye nombres de 
+                            elementos y pseudo-elementos, como <i>h1, div, :before y :after</i>
+                        </li>
+                    </ol>
+                    <br>
+                    <h2>La excepción <i>!important</i></h2>
+                    <p>
+                        Cuando se usa una regla <b><i>!important</i></b> en una declaración de 
+                        estilo, esta declaración anula cualquier otra declaración. A pesar de 
+                        no ser parte de la especificidad, interactua directamente con ella.
+                    </p>
+                    <br>
+                    <p>
+                        Sin embargo, usar <b><i>!important</i></b> es una mala práctica y debe
+                        evitarse porque dificulta la depuración al romper la cascada natural
+                        en sus hojas de estilo.
+                    </p>
+                    <br>
+                    <p>Cuando se aplican dos declaraciones en conflicto con la regla 
+                        <b><i>!important</i></b> al mismo elemento, se aplicará la declaración con
+                        una mayor especificidad.
+                    </p>
                 </div>
                 <!--<img src="img/image.png" alt="This is an image">-->
             </div>
